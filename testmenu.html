@@ -1,0 +1,268 @@
+<!Doctype>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.button {
+  background-image: radial-gradient(#ffffff );
+  border: none;
+  color: white;
+  padding: 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  /*margin: 2px 1px; */
+  cursor: pointer;
+}
+
+.button5 {border-radius: 50%;}
+.fishes
+    {
+      position:absolute;
+     width: 100%;
+	  top: 0px;
+      left: 0px;
+    }
+	.fishes5
+    {
+      position:absolute;
+     width: 100%;
+	  top: 0px;
+      left: 0px;
+    }
+	 .fishes6
+    {
+      position:absolute;
+	  color:pink;
+	  font : strong;
+	  font-family:calibri;
+      top: 15px;
+      left: 50px;
+     
+    }
+	.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   
+   width: 100%;
+   background-color: #6666ff;                                                 /*home page footer */
+   color:black;
+   text-align:center;
+
+   }
+@import url("https://fonts.googleapis.com/css?family=Signika");
+*,
+::before,
+::after {
+  /* box-sizing: border-box; */
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  line-height: 1.5;
+  font-family: "Baskerville Old Face", cursive;
+  font-weight: 300;
+  background-color: #ffffff;                                       /* main background */
+  color: #3369e7;
+}
+
+a {
+  text-decoration: none;
+  color: #3369e7;                                               /* main background text colour */
+}
+
+#check {
+  display: none;
+}
+#check + label {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+#check + label::before {
+  position: absolute;
+  content: "";
+  top: -1em;
+  left: -1em;
+  /*width: 50vw;*/
+  /*height: 50vh;*/
+  background-color: rgba(33, 33, 61, 0.5);
+  transform-origin: 50% 50%;
+ /* transform: scale(1.3); */
+  visibility: hidden;
+  opacity: 0;
+ /* transition: all 250ms linear; */
+}
+#check + label svg {
+  margin-right: 0.5em;
+}
+#check + label svg path {
+  transform-origin: 35% 50%;
+  transition: transform 166.6666666667ms cubic-bezier(0.06, 0.63, 0.91, 0.66);
+}
+#check:checked + label ~ aside {
+  transform: none;
+}
+#check:checked + label::before {
+  left: calc(25vw - 1em);
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+}
+@media (max-width: 576px) {
+  #check:checked + label::before {
+    left: calc(50vw - 1em);
+  }
+}
+#check:checked + label svg #one {
+  transform: rotate(45deg);
+}
+#check:checked + label svg #two {
+  transform: rotate(-45deg);
+  }
+#check:checked + label svg #three {
+  transform: rotate(80deg);
+}
+#check:checked + label ~ article {
+  z-index: -1;
+  transform: translateX(25vw) scale(0.7);
+  border-radius: 0.5em;
+  user-select: none;
+  pointer-events: none;
+}
+
+aside,
+article {
+  padding: 2.5em 0.5em 1em;                                        /* main page text align */
+  transition: all 250ms cubic-bezier(0.06, 0.63, 0.91, 0.66);
+}
+
+aside {
+  position: absolute;
+  width: 20vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  background-image: linear-gradient(#8080ff, #8080ff, #8080ff, #8080ff, #8080ff);
+  transform: translateX(-100%);
+}
+@media (max-width: 576px) {
+  aside {
+    width: 50vw;                                                         /* nav menu width */
+  }
+}
+
+article {
+  position: relative;
+  transform-origin: 10% 50%;
+  width: 100%;
+  background-image: linear-gradient(#f2e6ff, #ffffff, #f2e6ff);
+}
+article .wrapper {
+  margin: auto;
+  padding: 2em;
+  max-width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+article .wrapper h1 {
+  margin: 0;
+}
+article .wrapper .footer {
+  text-align: right;
+}
+.center {
+text-align: center;
+}
+.top01{
+ position: absolute;
+  top: 180px;
+  left: 1em;
+  }
+ .bottom{
+ position: absolute;
+  top: 400px;
+  left: 1em;
+ }
+  </style>
+</head>
+<body>
+<input type="checkbox" id="check"/>
+<label for="check">
+   <svg viewBox="0 0 30 30" width="30" height="40">
+    <path id="one" d="M4 10h22M4" stroke="#ff9933" stroke-width="2" stroke-linecap="round"></path>
+    <path id="two" d="M4 20h22M4" stroke="#ff9933" stroke-width="2" stroke-linecap="round"></path>
+	 <path id="three" d="M4 30h22M4" stroke="#ff9933" stroke-width="2" stroke-linecap="round"></path>
+  </svg>
+</label>
+
+<aside>
+  
+  <img src="image/login_bottom.png" class="fishes5" >
+  <img src="image/review.png" class="fishes6" > 
+  <div class="top01">
+    <a href="#"> <i class="fa fa-address-book fa-sm" style="color:yellow"></i> &nbsp; <span style="color:yellow;">Nav text</span></a><br>
+	 <a href="#"><i class="fa fa-handshake-o fa-sm" style="color:yellow"></i> &nbsp;<span style="color:yellow;">Nav text</span></a><br>
+      <a href="#"><i class="fa fa-id-card fa-sm" style="color:yellow"></i> &nbsp;<span style="color:yellow;"> Nav text</span></a><br>
+      <a href="#"><i class="fa fa-podcast fa-sm" style="color:yellow"></i> &nbsp;<span style="color:yellow;"> Nav text</span></a><br>
+      <a href="#"><i class="fa fa-user-circle-o fa-sm" style="color:yellow"></i>&nbsp; <span style="color:yellow;"> Nav text</span></a><br>
+  </div>
+  <div class="bottom">
+  <a href="#"><i class="fa fa-sign-out fa-sm" style="color:yellow"></i>&nbsp;  <span style="color:yellow;">Logout</span></a><br>
+    <p>&copy; NIC Tiruvannamalai</p>
+  </div>
+</aside>
+<article> 
+<img src="image/background.png" class="fishes" >
+  <div class="wrapper">
+    <div class="content">
+      <h1>Off-Canvas menu on Pure CSS</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum unde porro consequatur doloribus ex distinctio similique, voluptas repellendus voluptates nam dolorum! Repudiandae maxime, itaque vero dolorem distinctio inventore explicabo!</p>
+	   <div class="center"><a href="#"> <img src="image/NIC-LOGO.png"></a></div>
+     </div>
+    <div class="center"><a href="#"> <img src="image/NIC-LOGO.png"></a></div>
+  </div>
+  <div class="footer" >
+<button class="button button5"><a href="#"><i class="fa fa-home fa-sm" style="color:darkblue"></i></a></button>  
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <button class="button button5"><a href="#"><i class="fa fa-envelope fa-sm" style="color:darkblue"></i></a></button>    
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="button button5"><a href="#"><i class="fa fa-hand-o-left" style="color:darkblue"></i></a></button>  
+   </div>
+</article> 
+</body>
+<script>
+$("body").addClass("home_is_visible");
+
+$(".button").on("click", function () {
+  $("body").toggleClass("nav_is_visible");
+});
+
+function removeClasses() {
+  $(".menu ul li").each(function () {
+    var link = $(this).find("a").attr("href");
+    $("body").removeClass(link);
+  });
+}
+$(".menu a").on("click", function (e) {
+  e.preventDefault();
+  removeClasses();
+  var link = $(this).attr("href");
+  $("body").addClass(link);
+  $("body").removeClass("nav_is_visible");
+});
+
+</script>
+</html>
