@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tourism | Glance</title>
+  
+					
+                    <!-- Background Gradient color changing BG for all pages -->
+                      <!--   <link href="my_css/card_grid.css" rel="stylesheet" -->
+                    <!-- Scroll the page to top for all pages --> 
+                        <link href="my_css/top_page_scroll.css" rel="stylesheet">                
+                    <!-- Bootstrap 4 core MIN CSS -->
+                       <link href="css/bootstrap.min.css" rel="stylesheet">  
+                    <!-- Bootstrap 4 core STYLE CSS -->
+                       <!--  <link href="css/style.css" rel="stylesheet"> -->             
+                        <!-- <link href="css/style.min.css" rel="stylesheet"> -->
+                    <!-- jQuery CDN - Slim version (=without AJAX) -->
+                       <!--  <script src="js/jquery-3.3.1.slim.min.js"></script> -->
+                    <!-- Bootstrap 4 Popper.JS -->
+                        <script src="js/popper.min.js" ></script>
+                    <!-- Bootstrap 4 Bootstrap JS -->
+                        <script src="js/bootstrap.min.js" ></script>
+                    <!-- Bootstrap 4 To access AJAX query functions -->
+                        <script src="js/jquery.min.js"></script>
+						
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <style>
+  .button {
+  background-image: radial-gradient(#ffffff );
+  border: none;
+  color: white;
+  padding: 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  /*margin: 2px 1px; */
+  cursor: pointer;
+}
+
+.button5 {border-radius: 50%;}
+
+  
+.container {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-top: 15px;
+    border-radius: 10px;    
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+}
+figure{
+ margin-top: 15px;
+
+}
+.img1 {
+           position: relative;
+           /* margin-left: 73px;
+           margin-right: 20px; */
+           /* margin-top: 20px; */
+           border-radius: 16px;
+           box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+           height: 90px;
+           width: 90px;
+           }
+          
+
+           .row1{
+            margin-top: 50px;
+           }
+
+
+       
+           @media only screen and (max-width: 480px) {
+                   .img1 {
+                    margin-left: 55px;
+                
+                }
+           }
+            @media (max-width: 768px) {
+            .custicon{                
+                    -ms-flex: 0 0 50%;
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                    }
+
+            .img1 {
+                position: relative;          
+                border-radius: 16px;
+                box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+                height: 50px;              /*icon size reduce */
+                width: 50px;               /*icon size reduce */
+            }
+
+                }
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 15px;
+  
+}
+.container-fluid {
+ margin-top: 200px;
+}
+.fishes
+    {
+    position:absolute;
+    width: 100%; 
+   /*	margin-top: -200px; */
+    }
+	.fish
+    {
+      position:absolute;
+	  color:pink;
+	  font : strong;
+	  font-family:calibri;
+      top: 50px;
+      left: 220px;
+    
+    }
+	.fish1
+	{
+	 position:absolute;
+	  color:white;
+	  font : strong;
+	  font-family:Baskerville Old Face;
+      top: 70px;
+      left:8px; 
+    
+	}
+	.fish2
+	{
+	 position:absolute;
+	  color:white;
+	  font : strong;
+	  font-family:Baskerville Old Face;
+      top: 120px; 
+      left:28px; 
+    
+	}	
+</style> 
+ <style>     <!-- header corner menu -->
+ @import url("https://fonts.googleapis.com/css?family=Alata&display=swap");
+* {
+ /* box-sizing: border-box; */
+}
+:root {
+  --speed: 0.85;
+  --primary: #fff;
+  --size: 30;
+  --ease: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.menu__toggle:checked ~ .menu__content .menu__item {
+  --active-x: var(--x);
+  --active-y: var(--y);
+  --scale: 1;
+}
+.menu__toggle-label {
+  cursor: pointer;
+  height: calc(var(--size, 20) * 0.5vmin);
+  width: calc(var(--size, 20) * 0.5vmin);
+  display: block;
+  --clip: circle(100% at 0% 0%);
+  -webkit-clip-path: var(--clip);
+  clip-path: var(--clip);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: backdrop-filter calc(var(--speed, 1) * 1s) var(--ease), clip-path 0s, -webkit-clip-path 0s;
+}
+.menu__toggle-label--closer {
+  z-index: 3;
+  --scale: 0;
+}
+.menu__icon {
+  --scale: 1;
+  height: calc(var(--size, 20) * 0.25vmin);
+  width: calc(var(--size, 20) * 0.25vmin);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-70%, -70%) scale(var(--scale, 1));
+  fill: var(--primary);
+  transition: all calc(var(--speed, 1) * 1s) var(--ease);
+}
+.menu__icon:nth-of-type(2) {
+  --scale: 0;
+}
+.menu__content {
+  background: hsl(var(--hue, 0), 50%, 50%);
+  margin: 0;
+  display: block;
+  list-style-type: none;
+  z-index: -1;
+  filter: url("#goo");
+  position: absolute;
+  top: 0;
+  height: 0;
+  width: 0;
+  left: 0;
+  z-index: 2;
+
+}
+.menu__content:after {
+   background-color: hsl(284, 86%, 84%);
+  content: '';
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  height: calc(var(--size, 20) * 1vmin);
+  width: calc(var(--size, 20) * 1vmin);
+  top: 0;
+  left: 0;
+
+}
+.menu__item {
+   background-color: hsl(242, 64%, 62%);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  list-style-type: none;
+  font-size: 1rem;
+  height: calc(var(--size, 20) * 0.8vmin);                             /*  circle height */
+  left: calc(var(--active-x, 0) * 1vw);
+  overflow: hidden;
+  place-items: center;
+  position: absolute;
+  text-align: center;
+  top: calc(var(--active-y, 0) * 1vh);
+  transform: translate(-50%, -50%) scale(var(--scale, 0.75));
+  transition: all calc(var(--speed, 1) * 1s) calc(var(--delay, 0) * 1s) var(--ease);
+  width: calc(var(--size, 20) * 1vmin);                                                   /*  circle height */
+}
+.menu__link {
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   
+   width: 100%;
+   background-color: #6666ff; /*home page footer */
+   color:black;
+   text-align:center;
+
+}
+.center {
+text-align: center;
+}
+  </style>
+   </head>
+  <body>
+    <img src="image/background2.png" class="fishes" >
+  <img src="image/tnlogo7.png" class="fish">
+ <h3 class="fish1"> Heritage </h3> 
+ <h3 class="fish2"> Tiruvannamalai </h3> 
+  <nav class="menu" style="--hue: 209.49369670737067">
+  <input class="menu__toggle" id="menu-toggle" type="checkbox"/>
+  <label class="menu__toggle-label" for="menu-toggle"></label>
+  <label class="menu__toggle-label menu__toggle-label--closer" for="menu-toggle">
+    <svg class="menu__icon" preserveAspectRatio="xMinYMin" viewBox="0 0 24 24">
+      <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"></path>
+    </svg>
+    <svg class="menu__icon" preserveAspectRatio="xMinYMin" viewBox="0 0 24 24">
+      <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path>
+    </svg>
+  </label>
+  <ul class="menu__content">
+    <li class="menu__item" style="--x: 71; --y: 42;"><a class="menu__link" href="img_gallery.html">HOME</a></li>
+    <li class="menu__item" style="--x: 68; --y: 23;"><a class="menu__link" href="testmenu.html">ABOUT</a></li>
+    <li class="menu__item" style="--x: 18; --y: 65;"><a class="menu__link" href="testmenu.html">CONTACT</a></li>
+	<li class="menu__item" style="--x: 53; --y: 58;"><a class="menu__link" href="testmenu.html">CONTACT</a></li>
+   <li class="menu__item" style="--x: 33; --y: 15;"><a class="menu__link" href="testmenu.html">WORK</a></li>
+  </ul>
+</nav>
+ 
+<!-- <svg style="position: absolute;>
+  <defs>
+    <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="BLUR"></feGaussianBlur>
+      <feColorMatrix in="BLUR" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="GOO"></feColorMatrix>
+      <feBlend in="SourceGraphic" in2="goo"></feBlend>
+    </filter>
+  </defs>
+</svg> -->
+ <!--    <div class="mx-auto"> -->
+
+                <div class="container-fluid">
+                        <div class="row">
+					
+                            <div class ="col">
+                                <a href="testmenu.html">
+                                    <figure class="text-center"> <img class="figure-img img-fluid img1 img2 mx-auto" src="image/guide.png">
+									 <figcaption class="figure-caption" id="menuID"><b>Guide</b></figcaption> </figure>
+                                </a>
+                            </div> 
+                            <div class ="col">
+                                <a href="events_calendar2.html">
+                                    <figure class="text-center"> <img class="figure-img img-fluid img1 mx-auto" src="image/event_calendar.png">
+                                     <figcaption class="figure-caption" id="menuID"><b>Events Calendar</b></figcaption> </figure>
+                                </a>
+                            </div>
+                            <div class ="col">
+                                <a href="test_slide.html">
+                                    <figure class="text-center"> <img class="figure-img img-fluid img1 mx-auto" src="image/hotel.png">
+                                     <figcaption class="figure-caption" id="menuID"><b>Hotel & Restaurants</b></figcaption> </figure>
+                                 </a>
+                            </div>
+                            
+  
+
+
+                        </div>
+					
+					
+						<div class="row">
+						 <div class ="col">
+                                <a href="tourist_places.html">
+                                    <figure class="text-center"> <img class="figure-img img-fluid img1 mx-auto" src="image/tourist_place_img.png">
+                                    <figcaption class="figure-caption" id="menuID"><b>Tourist Places</b> </figcaption> </figure>
+                                </a>
+                            </div>
+                            <div class ="col">
+                                <a href="img_gallery.html">
+                                    <figure class="text-center"> <img class="figure-img img-fluid img1 mx-auto" src="image/gallery2.png">
+                                     <figcaption class="figure-caption" id="menuID"><b>Image Gallery</b></figcaption> </figure>
+                                </a>
+                            </div>
+                            <div class ="col">
+                                <a href="public_utilities.html">
+                                    <figure class="text-center"> <img class="figure-img img-fluid img1 mx-auto" src="image/emergency.png">
+                                    <figcaption class="figure-caption" id="menuID"><b>Emergency</b></figcaption> </figure>
+                                 </a>
+                            </div>
+							</div>
+							<div class="row">
+							<div class="col">
+                                <a href="https://eregister.tnega.org/#/user/pass">
+                                    <figure class="text-center"> <img class="figure-img img-fluid img1 mx-auto" src="image/tn_logo.png">
+                                    <figcaption class="figure-caption" id="menuID"><b>e-Registration</b></figcaption> </figure>
+                                 </a>
+                            </div>
+							<div class="col">
+								<a href="nearme_list.html">							
+                                    <figure class="text-center"> <img class="figure-img img-fluid img1 mx-auto" src="image/near_me.png">
+                                    <figcaption class="figure-caption" id="menuID"><b>Nearme</b></figcaption> </figure>
+                                 </a>
+							
+							</div>
+							<div class="col">
+                                <a href="eticket.html">
+                                    <figure class="text-center"> <img class="figure-img img-fluid img1 mx-auto" src="image/eticket.png">
+                                    <figcaption class="figure-caption" id="menuID"><b>eTicket Booking</b></figcaption> </figure>
+                                 </a>
+                            </div>
+							</div>						
+                </div>
+        <!-- </div> -->
+<div class="center"><a href="#"> <img src="image/NIC-LOGO.png"></a></div>
+      
+ <div class="footer" >
+<button class="button button5"><a href="#"><i class="fa fa-home fa-sm" style="color:darkblue"></i></a></button>  
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <button class="button button5"><a href="#"><i class="fa fa-envelope fa-sm" style="color:darkblue"></i></a></button>    
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="button button5"><a href="#"><i class="fa fa-hand-o-left" style="color:darkblue"></i></a></button>  
+   </div>
+
+</body>
+  </html>
+  
